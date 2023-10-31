@@ -9,6 +9,19 @@ import { withPrefix } from "gatsby";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
+  React.useEffect(() => {
+    const preventRightClick = (e) => {
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+      }
+    };
+    window.addEventListener('contextmenu', preventRightClick);
+
+    return () => {
+      window.removeEventListener('contextmenu', preventRightClick);
+    };
+  }, []);
+
   return (
     <div>
       <Helmet>
