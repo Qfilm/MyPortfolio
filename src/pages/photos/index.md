@@ -6,6 +6,6 @@ photos:
     caption: "Caption for photo 1"
   - image: /img/photo2.jpg
     caption: "Caption for photo 2"
+  - image: /img/img_2694.jpg
+    caption: Graduate  
 ---
-
-Additional content or description about the photo portfolio can go here.
