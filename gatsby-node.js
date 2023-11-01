@@ -79,6 +79,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 };
 
+exports.sourceNodes = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type MarkdownRemarkFrontmatterPhotos implements Node {
+      image: File
+      caption: String
+    }
+  `;
+  createTypes(typeDefs);
+};
+
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
   const typeDefs = `
@@ -86,12 +98,9 @@ exports.createSchemaCustomization = ({ actions }) => {
       frontmatter: Frontmatter
     }
     type Frontmatter {
-      photos: [Photos]
-    }
-    type Photos {
-      image: File @fileByRelativePath
-      caption: String
+      tags: [String!]
     }
   `;
   createTypes(typeDefs);
 };
+

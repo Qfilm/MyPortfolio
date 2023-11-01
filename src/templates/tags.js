@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { Link, graphql } from "gatsby";
+import { Link, graphql , useStaticQuery} from "gatsby";
 import Layout from "../components/Layout";
 
 const TagRoute = (props) =>  {
@@ -47,7 +47,7 @@ const TagRoute = (props) =>  {
 
 export default TagRoute;
 
-export const tagPageQuery = graphql`
+export const tagPageQuery = useStaticQuery(graphql`
   query TagPage($tag: String) {
     site {
       siteMetadata {
@@ -72,4 +72,4 @@ export const tagPageQuery = graphql`
       }
     }
   }
-`;
+`);
