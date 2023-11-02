@@ -47,9 +47,10 @@ export const photoPageQuery = graphql`
         photos {
           image{childImageSharp {
               gatsbyImageData(
-                width: 600
+                width: 300
+                height: 400
                 quality: 100
-                layout: CONSTRAINED
+                layout: FIXED
               )
             }
           }
