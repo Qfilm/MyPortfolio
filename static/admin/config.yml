@@ -136,7 +136,7 @@ collections:
       - file: "src/pages/photos/index.md"
         name: "photos"
         label: "Photos Page"
-        media_folder: "static/img"
+        media_folder: "/static/img"
         public_folder: "/img"
         create: true
         fields:

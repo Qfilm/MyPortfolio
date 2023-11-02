@@ -82,8 +82,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.sourceNodes = ({ actions }) => {
   const { createTypes } = actions;
   const typeDefs = `
-    type MarkdownRemarkFrontmatterPhotos implements Node {
-      image: File
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      photos: [Photos]
+    }
+    type Photos {
+      image: File @fileByRelativePath
       caption: String
     }
   `;
