@@ -45,12 +45,15 @@ export const photoPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         photos {
-          image {
-            childImageSharp {
-              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          image{childImageSharp {
+              gatsbyImageData(
+                width: 600
+                quality: 100
+                layout: CONSTRAINED
+              )
             }
           }
-          caption
+        caption
         }
       }
     }
