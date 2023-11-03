@@ -5,14 +5,19 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, content, contentComponent, portraitImage }) => {
   const PageContent = contentComponent || Content;
 
   return (
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div className="column is-4">
+            <figure className="image">
+              <img src={portraitImage} alt="Portrait of Me" style={{ borderRadius: '50%' }} />
+            </figure>
+          </div>
+          <div className="column is-8">
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
@@ -30,7 +35,9 @@ AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
+  portraitImage: PropTypes.object.isRequired, // add this line
 };
+
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data;
@@ -41,6 +48,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        portraitImage={post.frontmatter.portraitImage}
       />
     </Layout>
   );
@@ -58,6 +66,15 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        portraitImage{childImageSharp {
+              gatsbyImageData(
+                width: 400
+                height: 600
+                quality: 100
+                layout: FIXED
+              )
+            }
+          }
       }
     }
   }

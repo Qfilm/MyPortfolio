@@ -1,19 +1,12 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About our values
+title: About me
+portraitImage: /img/About.png
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Greetings, I'm Homelander, the protector of the people and a sentinel above the city. When I'm not donning my cape, I'm behind the lens, capturing the myriad facets of life that often go unnoticed. Photography for me is more than an art; it's the subtle storytelling of reality, a pause in the relentless flow of time. My journey as a film graduate has not only sharpened my vision but also deepened my appreciation for the narratives that unfold around us every day.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+My lens is drawn to the grandeur of the human spirit, much like my duty calls me to the grand scenes of heroism. Yet, in the quiet corners of the world, I find the purest forms of expression. Each photograph I take strives to unveil a layer of truth, to hold a mirror to society. The films I create are extensions of my quest for understanding, cinematic explorations of power, choice, and the fine line that heroes walk between them.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+I invite you to peruse my gallery, where the vulnerable meet the invincible, where still images speak volumes, and the moving pictures echo the pulse of life. It's here, through my art, that I connect with the world beyond the shield of my alter ego. So, come and see the world through my eyes — it's a perspective you won't find soaring above the clouds or from any news headline.

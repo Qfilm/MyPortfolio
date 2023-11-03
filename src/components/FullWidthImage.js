@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 export default function FullWidthImage(props) {
   const {
-    height = 400,
+    height = "100%",
     img,
     title,
     subheading,
@@ -28,7 +29,7 @@ export default function FullWidthImage(props) {
             style={{
               gridArea: "1/1",
               // You can set a maximum height for the image, if you wish.
-              height: height,
+              height: "100%",
               width: "100%",
             }}
             // This is a presentational image, so the alt should be an empty string
@@ -94,9 +95,17 @@ export default function FullWidthImage(props) {
               >
                 {subheading}
               </h3>
+
             )}
+            <Link style={{
+              marginTop: "1rem"
+            }} className="btn" to="/contact">
+              Contact Now
+            </Link>
           </div>
+
         )}
+
       </div>
     </React.Fragment>
   );
