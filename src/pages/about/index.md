@@ -1,8 +1,8 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
 title: About me
-portraitImage: /img/About.png
+portraitImage: /img/homelander.jpeg
 ---
 
 Greetings, I'm Homelander, the protector of the people and a sentinel above the city. When I'm not donning my cape, I'm behind the lens, capturing the myriad facets of life that often go unnoticed. Photography for me is more than an art; it's the subtle storytelling of reality, a pause in the relentless flow of time. My journey as a film graduate has not only sharpened my vision but also deepened my appreciation for the narratives that unfold around us every day.
