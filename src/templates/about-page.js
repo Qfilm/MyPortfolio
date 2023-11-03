@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 // eslint-disable-next-line
 export const AboutPageTemplate = ({ title, content, contentComponent, portraitImage }) => {
@@ -14,7 +15,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, portraitIm
         <div className="columns">
           <div className="column is-4">
             <figure className="image">
-              <img src={portraitImage} alt="Portrait of Me" style={{ borderRadius: '50%' }} />
+              <PreviewCompatibleImage imageInfo={{ image: portraitImage }} style={{ borderRadius: '50%' }}/>
             </figure>
           </div>
           <div className="column is-8">
