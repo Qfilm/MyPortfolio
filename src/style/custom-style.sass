@@ -1,5 +1,6 @@
 @import ./variables.sass
 
+
 .navbar .navbar-menu
   box-shadow: none !important
 
@@ -105,13 +106,44 @@ footer.footer
 
 .photo-grid 
     display: grid
-    grid-template-columns: repeat(auto-fill, MinMax(300px, 1fr))
-    gap: 1px
-    padding : 1em 1em 1em 1em
+    grid-gap: 0.1em
+    grid-template-columns: repeat(auto-fill, MinMax(200px, 1fr))
+    padding : 1em
+
+ 
+.photo-item
+  position: relative
+  overflow: hidden
+  img
+    width: 100%
+    height: auto
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out
+    display: block
+
+  &:hover
+    img
+      transform: scale(1.1) // Optional: zoom effect on hover
+    .photo-caption
+      opacity: 1
+      visibility: visible
+
+.photo-grid .photo-item:hover 
+  img 
+    transform: scale(1.1)
+    opacity: 0.5 !important
+    background-color: rgba(0, 0, 0, 0.6)
 
 
-.photo-item p 
-    text-align: center
-    padding: 1px 0
 
-
+.photo-caption
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  padding: 1em
+  background-color: rgba(0, 0, 0, 0.6) // semi-transparent background
+  color: white // text color
+  text-align: center
+  visibility: hidden
+  opacity: 0
+  transition: visibility 0s, opacity 0.3s linear

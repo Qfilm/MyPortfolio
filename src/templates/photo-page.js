@@ -12,7 +12,7 @@ export const PhotoPageTemplate = ({ photos }) => {
         {photos.map((photo, index) => (
           <div key={index} className="photo-item">
             <PreviewCompatibleImage imageInfo={photo.image} />
-            {photo.caption && <p>{photo.caption}</p>}
+            {photo.caption && <div className="photo-caption">{photo.caption}</div>}
           </div>
         ))}
       </div>
@@ -47,10 +47,10 @@ export const photoPageQuery = graphql`
         photos {
           image{childImageSharp {
               gatsbyImageData(
-                width: 300
-                height: 400
+                width: 230
+                height: 300
                 quality: 100
-                layout: FIXED
+                layout: CONSTRAINED
               )
             }
           }
