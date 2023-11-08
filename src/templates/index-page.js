@@ -18,7 +18,7 @@ export const IndexPageTemplate = ({
   const heroImage = getImage(image) || image;
 
   return (
-    <div>
+    <div style={{ backgroundcolour:"#f6eedd" }}>
       <FullWidthImage img={heroImage} title={title} subheading={subheading}/>
       <section className="section section--gradient">
         <div className="container">

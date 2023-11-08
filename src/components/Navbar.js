@@ -7,15 +7,17 @@ const Navbar = () => {
 
   return (
     <nav
+      id="navLogo"
       className="navbar is-transparent"
       role="navigation"
       aria-label="main-navigation"
     >
       <div className="container">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="Quality Snaps" style={{ width: "auto", height: "auto" }} />
+          <Link to="/">
+            <img src={logo} alt="Quality Snaps" style={{ width: "60px", height: "auto" }} />
           </Link>
+
           {/* Hamburger menu */}
           <button
             className={`navbar-burger burger ${isActive && "is-active"}`}

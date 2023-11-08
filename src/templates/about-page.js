@@ -15,7 +15,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, portraitIm
         <div className="columns">
           <div className="column is-4">
             <figure className="image">
-              <PreviewCompatibleImage imageInfo={{ image: portraitImage }} style={{ borderRadius: '50%' }}/>
+              <PreviewCompatibleImage imageInfo={{ image: portraitImage }} style={{ borderRadius: '50%'}}/>
             </figure>
           </div>
           <div className="column is-8">

@@ -87,6 +87,21 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
+                  <label className="label" htmlFor={"phone"}>
+                    Phone
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={"tel"} // Use tel type for telephone numbers
+                      name={"phone"}
+                      onChange={this.handleChange}
+                      id={"phone"}
+                      required={true} // Remove this if the phone number is not required
+                    />
+                  </div>
+                </div>
+                <div className="field">
                   <label className="label" htmlFor={"message"}>
                     Message
                   </label>
