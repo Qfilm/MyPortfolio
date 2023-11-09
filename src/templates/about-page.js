@@ -18,9 +18,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent, portraitIm
               <PreviewCompatibleImage imageInfo={{ image: portraitImage }} style={{ borderRadius: '50%'}}/>
             </figure>
           </div>
-          <div className="column is-8">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+          <div  className="column is-8">
+            <div className="sectionAbout">
+              <h2  className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
               <PageContent className="content" content={content} />
