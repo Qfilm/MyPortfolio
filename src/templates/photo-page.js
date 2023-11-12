@@ -20,11 +20,11 @@ export const PhotoPageTemplate = ({ photos }) => {
   );
 };
 
-const PhotoPage = ({ data }) => {
+const PhotoPage = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout>
+    <Layout location={location}>
       <PhotoPageTemplate photos={frontmatter.photos} />
     </Layout>
   );

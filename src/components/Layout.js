@@ -6,8 +6,9 @@ import "../style/bulma-style.sass";
 import "../style/custom-style.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import { motion } from 'framer-motion';
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, location }) => {
   const { title, description } = useSiteMetadata();
   React.useEffect(() => {
     const preventRightClick = (e) => {
@@ -21,7 +22,19 @@ const TemplateWrapper = ({ children }) => {
       window.removeEventListener('contextmenu', preventRightClick);
     };
   }, []);
+  // Define your page transition variants
+  const pageVariants = {
+    initial: { opacity: 0, x: "-100vw" },
+    in: { opacity: 1, x: 0 },
+    out: { opacity: 0, x: "100vw" },
+  };
 
+  // Transition settings
+  const pageTransition = {
+    type: "tween",
+    ease: "anticipate",
+    duration: 0.7
+  };
   return (
     <div>
       <Helmet>
@@ -63,7 +76,17 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div>{children}</div>
+      <div><motion.div
+        key={location.pathname}
+        initial="initial"
+        animate="in"
+        exit="out"
+        variants={pageVariants}
+        transition={pageTransition}
+      >
+        {children}
+      </motion.div></div>
+
       <Footer />
     </div>
   );

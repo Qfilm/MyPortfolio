@@ -2,9 +2,40 @@
 
 #navLogo
  background-color: $bg-color
+
 .navbar .navbar-menu
   box-shadow: none !important
   background-color: $bg-color
+
+.navbar-item
+  position: relative
+  display: inline-block
+  padding: 18px 15px // Adjust as needed
+  transition: all 0.3s ease
+  overflow: hidden // Hide the moving parts until hover
+
+  &:before
+    content: ''
+    position: absolute
+    top: -100%
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #EB4B4C // Your choice of color
+    transition: all 0.3s ease
+    z-index: -1
+
+  &:hover:before
+    top: 0
+
+  &:hover
+    color: #fff !important 
+    background-color: #EB4B4C
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) // Optional: adds a subtle shadow around the box
+
+
+
+
 
 .content .taglist
   list-style: none
@@ -44,22 +75,48 @@
     justify-content: center
     align-items: center
 
+// Define color variables
+$btn-color: #EB4B4C
+
+
+// Keyframes for pulse animation
+@keyframes pulse
+  0%
+    box-shadow: 0 0 0 0 $btn-color
+  100%
+    box-shadow: 0 0 0 2em transparent
+
+// Button styling
 .btn
-    display: inline-block
-    padding: 12px 16px 10px
-    font-size: 18px
-    font-size: 1rem
-    line-height: 1.25
-    background-color: #fff
-    border-radius: .25rem
-    text-decoration: none
-    font-weight: 700
-    color: #EB4B4C
-    text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #EB4B4C
-    box-shadow: inset 0 0 0 2px #EB4B4C
-    -webkit-transition: all .15s ease
-    transition: all .15s ease
+  display: inline-block
+  padding: 12px 16px 10px
+  font-size: 18px
+  line-height: 1.25
+  background-color: #fff
+  border-radius: .25rem
+  text-decoration: none
+  font-weight: 700
+  color: $btn-color
+  text-align: center
+  -webkit-box-shadow: inset 0 0 0 2px $btn-color
+  box-shadow: inset 0 0 0 2px $btn-color
+  -webkit-transition: all .15s ease
+  transition: all .15s ease
+
+  &:hover, &:focus
+    color: #fff
+    background-color: $btn-color
+    -webkit-box-shadow: inset 0 0 0 2em transparent
+    box-shadow: inset 0 0 0 2em transparent
+    animation: pulse 1s
+
+.button
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+  transition: all 0.3s ease
+
+  &:hover
+   transform: translateY(-4px)
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3)
 
 .margin-top-0
   margin-top: 0 !important
@@ -205,3 +262,9 @@ footer.footer
 
 body
   background-color: $bg-color
+
+body, html 
+  overflow-x: hidden
+
+
+

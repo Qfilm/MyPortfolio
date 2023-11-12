@@ -41,8 +41,9 @@ export default class Contact extends React.Component {
   };
 
   render() {
+    const { location } = this.props;
     return (
-      <Layout>
+      <Layout location={location}>
         <section className="section">
           <div className="container">
             <div className="content">
