@@ -4,20 +4,22 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 const FeatureGrid = ({ gridItems }) => (
     <div className="columns is-multiline">
-        {gridItems.map((item) => (
+        {gridItems.map((item, index) => (
             <div key={item.text} className="column is-6">
-                <section className="section">
+                <section className="section" data-aos="fade-up" data-aos-delay={`${index * 100}`}>
                     <div className="has-text-centered">
                         <div
                             style={{
                                 width: "240px",
                                 display: "inline-block",
                             }}
+                            data-aos="zoom-in"
+                            data-aos-delay={`${index * 150}`}
                         >
                             <PreviewCompatibleImage imageInfo={item} />
                         </div>
                     </div>
-                    <p>{item.text}</p>
+                    <p data-aos="fade-left" data-aos-delay={`${index * 200}`}>{item.text}</p>
                 </section>
             </div>
         ))}

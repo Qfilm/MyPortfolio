@@ -7,6 +7,8 @@ import "../style/custom-style.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import { motion } from 'framer-motion';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const TemplateWrapper = ({ children, location }) => {
   const { title, description } = useSiteMetadata();
@@ -22,6 +24,18 @@ const TemplateWrapper = ({ children, location }) => {
       window.removeEventListener('contextmenu', preventRightClick);
     };
   }, []);
+
+  React.useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      // Settings you can adjust according to your needs
+      duration: 500, // Animation duration in milliseconds
+      delay: 100,    // Delay in milliseconds
+      once: false,   // Whether animation should fire only once or every time you scroll up/down to elements
+      mirror: true,  // Whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // Defines which position of the element regarding to window should trigger the animation
+    });
+  }, []);
   // Define your page transition variants
   const pageVariants = {
     initial: { opacity: 0, x: "-100vw" },
@@ -32,7 +46,7 @@ const TemplateWrapper = ({ children, location }) => {
   // Transition settings
   const pageTransition = {
     type: "tween",
-    ease: "anticipate",
+    ease: "backOut",
     duration: 0.7
   };
   return (

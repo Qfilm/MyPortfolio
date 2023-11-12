@@ -11,15 +11,16 @@ const BlogRollTemplate = (props) => {
   return (
     <div className="columns is-multiline">
       {posts &&
-        posts.map(({ node: post }) => (
-          <div className="is-parent column is-6" key={post.id}>
+        posts.map(({ node: post }, index) => (
+          <div className="is-parent column is-6" key={post.id} data-aos="fade-up" data-aos-delay={`${index * 50}`}>
             <article
               className={`blog-list-item tile is-child box notification ${post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
+                }`} data-aos="fade-right"
+              data-aos-delay={`${index * 150}`}
             >
               <header>
                 {post?.frontmatter?.featuredimage && (
-                  <div className="featured-thumbnail">
+                  <div className="featured-thumbnail" data-aos="zoom-in" data-aos-delay={`${index * 50}`}>
                     <PreviewCompatibleImage
                       imageInfo={{
                         image: post.frontmatter.featuredimage,
@@ -41,7 +42,7 @@ const BlogRollTemplate = (props) => {
                   </span>
                 </p>
               </header>
-              <p>
+              <p data-aos="fade-left" data-aos-delay={`${index * 100}`}>
                 {post.excerpt}
                 <br />
                 <br />

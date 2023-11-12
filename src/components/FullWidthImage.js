@@ -98,7 +98,7 @@ export default function FullWidthImage(props) {
 
             )}
             <Link style={{
-              marginTop: "2.0rem"
+              marginTop: "1.0rem"
             }} className="btn" to="/contact">
               Contact Now
             </Link>

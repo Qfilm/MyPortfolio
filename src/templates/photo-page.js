@@ -10,8 +10,10 @@ export const PhotoPageTemplate = ({ photos }) => {
     <div className="content">
       <div className="photo-grid">
         {photos.map((photo, index) => (
-          <div key={index} className="photo-item">
-            <PreviewCompatibleImage imageInfo={photo.image} />
+          <div key={index} className="photo-item" data-aos="fade-up">
+            {photo.image && (
+              <PreviewCompatibleImage imageInfo={photo.image} />
+            )}
             {photo.caption && <div className="photo-caption">{photo.caption}</div>}
           </div>
         ))}

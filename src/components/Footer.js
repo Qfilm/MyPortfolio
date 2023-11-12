@@ -1,17 +1,21 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { Link } from "gatsby";
-
 import logo from "../img/logo.png";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <footer className="footer has-background-black has-text-white-ter">
-      <div className="content has-text-centered">
+      <div className="content has-text-centered" data-aos="fade-up" data-aos-duration="500">
         <img
           src={logo}
           alt="logo"
@@ -21,7 +25,7 @@ const Footer = () => {
       <div className="content has-text-centered has-background-black has-text-white-ter">
         <div className="container has-background-black has-text-white-ter">
           <div style={{ maxWidth: "100vw" }} className="columns">
-            <div className="column is-4">
+            <div className="column is-4" data-aos="fade-right" data-aos-duration="100">
               <section className="menu">
                 <ul className="menu-list">
                   <li>
@@ -52,7 +56,7 @@ const Footer = () => {
                 </ul>
               </section>
             </div>
-            <div className="column is-4">
+            <div className="column is-4" data-aos="fade-up" data-aos-duration="100">
               <section>
                 <ul className="menu-list">
                   <li>
@@ -68,7 +72,7 @@ const Footer = () => {
                 </ul>
               </section>
             </div>
-            <div className="column is-4 social">
+            <div className="column is-4 social" data-aos="fade-left" data-aos-duration="100">
               <a title="facebook" href="https://facebook.com">
                 <img
                   src={facebook}
@@ -96,7 +100,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p style={{ textAlign: "center" }}>© {new Date().getFullYear()} Ryan Beattie. All rights reserved.</p>
+      <p style={{ textAlign: "center" }} data-aos="zoom-in-up" data-aos-duration="100">© {new Date().getFullYear()} Ryan Beattie. All rights reserved.</p>
     </footer>
   );
 };

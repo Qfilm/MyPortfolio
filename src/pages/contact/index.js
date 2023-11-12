@@ -1,6 +1,8 @@
-import * as React from "react";
+import React from "react";
 import { navigate } from "gatsby-link";
 import Layout from "../../components/Layout";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function encode(data) {
   return Object.keys(data)
@@ -12,6 +14,10 @@ export default class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isValidated: false };
+  }
+
+  componentDidMount() {
+    AOS.init();
   }
 
   handleChange = (e) => {
@@ -40,7 +46,7 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
+              <h1 data-aos="fade-up" data-aos-duration="500">Contact</h1>
               <form
                 name="contact"
                 method="post"
@@ -57,7 +63,8 @@ export default class Index extends React.Component {
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
                 </div>
-                <div className="field">
+                {/* Apply AOS animations to each form field */}
+                <div className="field" data-aos="fade-right" data-aos-duration="500">
                   <label className="label" htmlFor={"name"}>
                     Your name
                   </label>
@@ -72,7 +79,7 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="field">
+                <div className="field" data-aos="fade-left" data-aos-duration="500">
                   <label className="label" htmlFor={"email"}>
                     Email
                   </label>
@@ -87,22 +94,22 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="field">
+                <div className="field" data-aos="fade-right" data-aos-duration="500">
                   <label className="label" htmlFor={"phone"}>
                     Phone
                   </label>
                   <div className="control">
                     <input
                       className="input"
-                      type={"tel"} // Use tel type for telephone numbers
+                      type={"tel"}
                       name={"phone"}
                       onChange={this.handleChange}
                       id={"phone"}
-                      required={true} // Remove this if the phone number is not required
+                      required={true}
                     />
                   </div>
                 </div>
-                <div className="field">
+                <div className="field" data-aos="fade-left" data-aos-duration="500">
                   <label className="label" htmlFor={"message"}>
                     Message
                   </label>
@@ -116,7 +123,7 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="field">
+                <div className="field" data-aos="zoom-in-up" data-aos-duration="500">
                   <button className="button is-link" type="submit">
                     Send
                   </button>
