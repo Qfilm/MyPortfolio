@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
@@ -11,6 +11,41 @@ export default function FullWidthImage(props) {
     subheading,
     imgPosition = "top left",
   } = props;
+  const [typedTitle, setTypedTitle] = useState("");
+  const [typedSubheading, setTypedSubheading] = useState("");
+  // Typing effect for the title
+  useEffect(() => {
+    let typingInterval;
+    let currentTitleCharIndex = 0;
+    let currentSubheadingCharIndex = 0;
+
+    const typeTitle = () => {
+      if (currentTitleCharIndex < title.length) {
+        setTypedTitle((prev) => prev + title[currentTitleCharIndex]);
+        currentTitleCharIndex++;
+      } else {
+        clearInterval(typingInterval);
+        typeSubheading();
+      }
+    };
+
+    const typeSubheading = () => {
+      typingInterval = setInterval(() => {
+        if (currentSubheadingCharIndex < subheading.length) {
+          setTypedSubheading((prev) => prev + subheading[currentSubheadingCharIndex]);
+          currentSubheadingCharIndex++;
+        } else {
+          clearInterval(typingInterval);
+        }
+      }, 150); // Adjust typing speed for subheading
+    };
+
+    if (title) {
+      typingInterval = setInterval(typeTitle, 100); // Adjust typing speed for title
+    }
+
+    return () => clearInterval(typingInterval);
+  }, [title, subheading]);
 
   return (
     <React.Fragment>
@@ -53,7 +88,7 @@ export default function FullWidthImage(props) {
             formats={["auto", "webp", "avif"]}
           />
         )}
-        {(title || subheading) && (
+        {(typedTitle || typedSubheading) && (
           <div
             style={{
               // By using the same grid area for both, they are stacked on top of each other
@@ -65,9 +100,9 @@ export default function FullWidthImage(props) {
             }}
           >
             {/* Any content here will be centered in the component */}
-            {title && (
+            {typedTitle && (
               <h1
-                className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+                className="typing-title has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
                 style={{
                   boxShadow:
                     "rgb(235, 75, 76) 0.5rem 0px 0px, rgb(235, 75, 76) -0.5rem 0px 0px",
@@ -77,12 +112,12 @@ export default function FullWidthImage(props) {
                   padding: "0.25em",
                 }}
               >
-                {title}
+                {typedTitle}
               </h1>
             )}
-            {subheading && (
+            {typedSubheading && (
               <h3
-                className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+                className="subheading has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                 style={{
                   boxShadow:
                     "rgb(235, 75, 76) 0.5rem 0px 0px, rgb(235, 75, 76) -0.5rem 0px 0px",
@@ -93,7 +128,7 @@ export default function FullWidthImage(props) {
                   marginTop: "1.0rem",
                 }}
               >
-                {subheading}
+                {typedSubheading}
               </h3>
 
             )}

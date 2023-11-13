@@ -268,3 +268,16 @@ body, html
 
 
 
+.typing-title.subheading 
+  white-space: nowrap
+  overflow: hidden
+  border-right: .15em solid #EB4B4C
+
+  @keyframes blink-caret
+    from, to
+      border-color: transparent
+    50%
+      border-color: #EB4B4C
+
+  animation: blink-caret .75s step-end infinite
+
