@@ -3,16 +3,15 @@ templateKey: photo-page
 title: My Photo Portfolio
 photos:
   - image: /img/img_20230325_111454.jpg
-    caption: Vibe
+    caption: ""
   - image: /img/img_20230325_111734.jpg
   - image: /img/img_20230325_162051.jpg
-    caption: Art
+    caption: ""
   - image: /img/img_20230326_142728_971.jpg
-    caption: Stop
+    caption: ""
   - image: /img/img_20230507_021131.jpg
   - image: /img/img_20230607_110320.jpg
   - image: /img/img_20230624_232429.jpg
-  - image: /img/img-20231008-wa0000.jpg
   - image: /img/img_20230324_200503.jpg
   - image: /img/img_20230324_194230.jpg
   - image: /img/img_20230326_160439.jpg
