@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Quality On Screen
-image: /img/bg.png
+image: https://miro.medium.com/v2/resize:fit:739/1*gst07ruBan_e2tuWm8ljkw.jpeg
 heading: Quality On Screen
-subheading: Creative Photographer Available for hire
+subheading: Film Reviews, Creative Photography and Film Tutoring available.
 ---
