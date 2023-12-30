@@ -73,14 +73,14 @@ const Footer = () => {
               </section>
             </div>
             <div className="column is-4 social" data-aos="fade-left" data-aos-duration="100">
-              <a title="facebook" href="https://facebook.com">
+              <a title="Letterboxd" href="https://boxd.it/5LWXb">
                 <img
                   src={facebook}
                   alt="Facebook"
                   style={{ width: "1em", height: "1em" }}
                 />
               </a>
-              <a title="twitter" href="https://twitter.com">
+              <a title="x" href="https://x.com/QualityonScreen?t=G9xzn4SDISLth3lEEybGyQ&s=09">
                 <img
                   className="fas fa-lg"
                   src={twitter}
