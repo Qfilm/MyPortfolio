@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "gatsby";
 import logo from "../img/logo.png";
-import facebook from "../img/social/facebook.svg";
+import letterboxd from "../img/social/letterboxd.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
 import AOS from 'aos';
@@ -75,8 +75,8 @@ const Footer = () => {
             <div className="column is-4 social" data-aos="fade-left" data-aos-duration="100">
               <a title="Letterboxd" href="https://boxd.it/5LWXb">
                 <img
-                  src={facebook}
-                  alt="Facebook"
+                  src={letterboxd}
+                  alt="letterboxd"
                   style={{ width: "1em", height: "1em" }}
                 />
               </a>
