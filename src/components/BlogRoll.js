@@ -16,7 +16,7 @@ const BlogRollTemplate = (props) => {
             <article
               className={`blog-list-item tile is-child box notification ${post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`} data-aos="fade-right"
-              data-aos-delay={`${index * 150}`}
+              data-aos-delay={`${index * 100}`}
             >
               <header>
                 {post?.frontmatter?.featuredimage && (

@@ -15,7 +15,7 @@ const Footer = () => {
 
   return (
     <footer className="footer has-background-black has-text-white-ter">
-      <div className="content has-text-centered" data-aos="fade-up" data-aos-duration="500">
+      <div className="content has-text-centered">
         <img
           src={logo}
           alt="logo"
@@ -25,7 +25,7 @@ const Footer = () => {
       <div className="content has-text-centered has-background-black has-text-white-ter">
         <div className="container has-background-black has-text-white-ter">
           <div style={{ maxWidth: "100vw" }} className="columns">
-            <div className="column is-4" data-aos="fade-right" data-aos-duration="100">
+            <div className="column is-4">
               <section className="menu">
                 <ul className="menu-list">
                   <li>
@@ -56,7 +56,7 @@ const Footer = () => {
                 </ul>
               </section>
             </div>
-            <div className="column is-4" data-aos="fade-up" data-aos-duration="100">
+            <div className="column is-4">
               <section>
                 <ul className="menu-list">
                   <li>
@@ -72,7 +72,7 @@ const Footer = () => {
                 </ul>
               </section>
             </div>
-            <div className="column is-4 social" data-aos="fade-left" data-aos-duration="100">
+            <div className="column is-4 social">
               <a title="Letterboxd" href="https://boxd.it/5LWXb">
                 <img
                   src={letterboxd}
@@ -80,7 +80,7 @@ const Footer = () => {
                   style={{ width: "1em", height: "1em" }}
                 />
               </a>
-              <a title="x" href="https://x.com/QualityonScreen?t=G9xzn4SDISLth3lEEybGyQ&s=09">
+              <a title="X" href="https://x.com/QualityonScreen?t=G9xzn4SDISLth3lEEybGyQ&s=09">
                 <img
                   className="fas fa-lg"
                   src={twitter}
@@ -88,7 +88,7 @@ const Footer = () => {
                   style={{ width: "1em", height: "1em" }}
                 />
               </a>
-              <a title="instagram" href="https://instagram.com">
+              <a title="Instagram" href="https://instagram.com">
                 <img
                   src={instagram}
                   alt="Instagram"
@@ -100,7 +100,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p style={{ textAlign: "center" }} data-aos="zoom-in-up" data-aos-duration="100">© {new Date().getFullYear()} Ryan Beattie. All rights reserved.</p>
+      <p style={{ textAlign: "center" }} >© {new Date().getFullYear()} Ryan Beattie. All rights reserved.</p>
     </footer>
   );
 };
