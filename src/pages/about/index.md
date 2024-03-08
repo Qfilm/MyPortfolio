@@ -2,6 +2,12 @@
 templateKey: about-page
 path: /about
 title: "About me "
-portraitImage: /img/img_20220822_123554_915.jpg
+portraitImage: /img/screenshot_2024-03-08-21-34-25-16_1c337646f29875672b5a61192b9010f9.jpeg
 ---
-\-
+My name is Ryan Beattie, and I am 26 years old. In 2021, I graduated with a Bachelor's honours degree in Film Studies and Production at Queen's University Belfast. The following year, I graduated with a Master's Degree in Film from the same university. Throughout my studies, I have obtained a high level of film knowledge within American cinema, British cinema, European cinema, and world cinema. I became extremely fascinated and passionate about film theory and film history, which involved analysing, criticising, and engaging in research. 
+
+To this end, I am interested in writing film essays, reviews, and articles. I thrive on decoding film narratives, symbolism, allegory, plot functions, directorial styles and techniques, as well as theoretical and practical film language. These specific skills, which I have adopted over the years, have been developed and capitalised on through watching key films throughout the history of cinema, engaging in film literature, listening to film commentaries, podcasts, and discussion panels, and studying the important filmmakers and films since the onset of motion pictures, during my studies and in my own time. I frequently write reviews as a hobby, and I am always aware of new releases in cinemas and on streaming platforms, as well as what is important to watch and what isn't. 
+
+I have obtained a high level of technical, practical, and theoretical film knowledge. Therefore, I have developed an extensive and unique understanding of film language. I have made various short films during my higher education, wherein I have embodied several key roles such as directing, cinematography, and sound recording. I have experience working on interior and exterior sets and locations, operating high-functioning cameras, as well as sound and lighting equipment. I became extremely fascinated and passionate about cinematography in particular.
+
+Additionally, I spend each day developing my photography skills and knowledge as I enjoy seeing the world through the lens of a camera and have adopted a keen eye for everything that needs to be photographed. I am interested in framing and composition, as well as lighting techniques. I primarily photograph natural landscapes and artificial interiors. Furthermore, with the film knowledge that I have gained throughout my freelancing career, I possess the ability to develop the minds of film students who are interested in film and also those studying film.
