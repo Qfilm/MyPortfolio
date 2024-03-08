@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: "Goodfellas (1990) Dir. Martin Scorsese "
 date: 2024-03-08T23:00:34.606Z
-description: 4.5/5
+description: 5/5
 featuredpost: true
 featuredimage: https://a.ltrbxd.com/resized/film-poster/5/1/3/8/3/51383-goodfellas-0-460-0-690-crop.jpg?v=c6c265f228
 ---
