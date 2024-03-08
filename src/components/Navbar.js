@@ -15,7 +15,11 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-brand">
           <Link to="/">
-            <img src={logo} alt="Quality Snaps" style={{ width: "60px", height: "auto" }} />
+            <img
+              src={logo}
+              alt="Quality Snaps"
+              style={{ width: "60px", height: "auto" }}
+            />
           </Link>
 
           {/* Hamburger menu */}
@@ -29,7 +33,12 @@ const Navbar = () => {
             <span />
           </button>
         </div>
-        <ul id="navMenu" className={` navbar-start has-text-centered navbar-menu ${isActive && "is-active"}`}>
+        <ul
+          id="navMenu"
+          className={` navbar-start has-text-centered navbar-menu ${
+            isActive && "is-active"
+          }`}
+        >
           {/* TODO: inline override of padding is a result of refactoring
                 to a ul for accessibilty purposes, would like to see a css
                 re-write that makes this unneccesary.
@@ -46,7 +55,7 @@ const Navbar = () => {
           </li>
           <li className="navbar-item" style={{ padding: "0px" }}>
             <Link className="navbar-item" to="/blog">
-              Blog
+              Film Analysis
             </Link>
           </li>
           <li className="navbar-item" style={{ padding: "0px" }}>

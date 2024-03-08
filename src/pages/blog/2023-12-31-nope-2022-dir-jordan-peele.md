@@ -2,7 +2,6 @@
 templateKey: blog-post
 title: Nope (2022) Dir. Jordan Peele
 date: 2023-12-31T17:56:45.964Z
-description: 4/5
 featuredpost: true
 featuredimage: https://m.media-amazon.com/images/M/MV5BMGIyNTI3NWItNTJkOS00MGYyLWE4NjgtZDhjMWQ4Y2JkZTU5XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_.jpg
 ---
