@@ -5,13 +5,9 @@ date: 2024-03-08T23:00:34.606Z
 featuredpost: true
 featuredimage: https://a.ltrbxd.com/resized/film-poster/5/1/3/8/3/51383-goodfellas-0-460-0-690-crop.jpg?v=c6c265f228
 ---
-**An in-depth personalised analysis of Martin Scorsese's *GoodFellas* (1990)**
-
-
+**An in-depth personalised analysis of Martin Scorsese's *GoodFellas* (1990): Exploring a classic tale of gangsters, greed, and morality.**
 
 ![](https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UY2972_.jpg)
-
-
 
 Martin Scorsese's *Goodfellas* (1990), the film that he didn't want to make but had to, is considered by the average film viewer to be his best work. Those average film viewers, however, have probably only seen *Gangs of New York* (2002), *The Departed* (2005), *Shutter Island* (2010), and *The Wolf of Wall Street* (2013)—and maybe even *The Irishman* (2019). Nevertheless, those films could be his best work if almost every other film he has ever made since 1967 didn't exist, especially *Mean Streets* (1973), *Taxi Driver* (1976), and *Raging Bull* (1980). But they do exist. Those pictures are untouchable. I know this is already beginning to sound like a "*Goodfellas* isn't actually as important as everyone thinks it is" analysis, but it's not that kind of analysis. It's quite the contrary: *Goodfellas* is a prolific film within American cinema. It's maybe even the second-best modern gangster film ever made, after Francis Ford Coppola's *The Godfather* (1972). This analysis is more of a "Let's look at what makes *Goodfellas*, *Goodfellas.*". 
 
