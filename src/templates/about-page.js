@@ -6,7 +6,12 @@ import Content, { HTMLContent } from "../components/Content";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ title, content, contentComponent, portraitImage }) => {
+export const AboutPageTemplate = ({
+  title,
+  content,
+  contentComponent,
+  portraitImage,
+}) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -15,12 +20,24 @@ export const AboutPageTemplate = ({ title, content, contentComponent, portraitIm
         <div className="columns">
           <div className="column is-4">
             <figure className="image">
-              <PreviewCompatibleImage imageInfo={{ image: portraitImage }} style={{ borderRadius: '50%'}}/>
+              <PreviewCompatibleImage
+                imageInfo={{ image: portraitImage }}
+                style={{ borderRadius: "50%" }}
+              />
             </figure>
           </div>
-          <div  className="column is-8">
+          <div className="column is-8">
             <div className="sectionAbout">
-              <h2  className="title is-size-3 has-text-weight-bold is-bold-light">
+              <h2
+                className="title is-size-3 has-text-weight-bold is-bold-light"
+                style={{
+                  border: "4px solid #fff",
+                  backgroundColor: "#84cdee",
+                  padding: "1rem",
+                  display: "inline-block",
+                  width: "fit-content",
+                }}
+              >
                 {title}
               </h2>
               <PageContent className="content" content={content} />
@@ -38,7 +55,6 @@ AboutPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
   portraitImage: PropTypes.object.isRequired, // add this line
 };
-
 
 const AboutPage = ({ data, location }) => {
   const { markdownRemark: post } = data;
@@ -67,15 +83,16 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
-        portraitImage{childImageSharp {
-              gatsbyImageData(
-                width: 400
-                height: 600
-                quality: 100
-                layout: FIXED
-              )
-            }
+        portraitImage {
+          childImageSharp {
+            gatsbyImageData(
+              width: 400
+              height: 600
+              quality: 100
+              layout: FIXED
+            )
           }
+        }
       }
     }
   }

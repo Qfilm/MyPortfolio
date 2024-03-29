@@ -23,9 +23,20 @@ export const IndexPageTemplate = ({ image, title, heading, subheading }) => {
                 <div className="content">
                   <div className="content">
                     <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
-                        Film Analyses and Reviews
-                      </h3>
+                      <div className="column is-12 has-text-centered">
+                        <h3
+                          className="has-text-weight-semibold is-size-2"
+                          style={{
+                            border: "4px solid #fff",
+                            backgroundColor: "#84cdee",
+                            padding: "1rem",
+                            display: "inline-block",
+                            width: "fit-content",
+                          }}
+                        >
+                          Latest Work
+                        </h3>
+                      </div>
                       <BlogRoll />
                       <div className="column is-12 has-text-centered">
                         <Link className="btn" to="/blog">

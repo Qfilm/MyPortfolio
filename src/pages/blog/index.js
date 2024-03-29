@@ -8,31 +8,30 @@ export default class BlogIndexPage extends React.Component {
     const { location } = this.props;
     return (
       <Layout location={location}>
-        <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url('/img/bgblog.jpeg')`,
-          }}
-        >
-          <h1
-            className="has-text-weight-bold is-size-1"
+      <div
+        className="full-width-image-container margin-top-0"
+        style={{
+        backgroundImage: `url('/img/bgblog.jpeg')`,
+        }}
+      >
+        <h1
+        className="has-text-weight-bold is-size-1"
             style={{
-              boxShadow: "0.5rem 0 0 #EB4B4C, -0.5rem 0 0 #EB4B4C",
-              backgroundColor: "#EB4B4C",
-              color: "white",
-              padding: "1rem",
-            }}
-          >
-            Film Analyses and Reviews
-          </h1>
+          border: "4px solid #fff",
+          backgroundColor: "#84cdee",
+          padding: "1rem"
+        }}
+        >
+        Film Analyses and Reviews
+        </h1>
+      </div>
+      <section className="section">
+        <div className="container">
+        <div className="content">
+          <BlogRoll />
         </div>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <BlogRoll />
-            </div>
-          </div>
-        </section>
+        </div>
+      </section>
       </Layout>
     );
   }
