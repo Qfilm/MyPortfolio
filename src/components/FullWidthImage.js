@@ -8,7 +8,6 @@ export default function FullWidthImage(props) {
     height = "100%",
     img,
     title,
-    subheading,
     imgPosition = "top left",
   } = props;
 
@@ -53,7 +52,7 @@ export default function FullWidthImage(props) {
             formats={["auto", "webp", "avif"]}
           />
         )}
-        {(title || subheading) && (
+        {title && (
           <div
             style={{
               // By using the same grid area for both, they are stacked on top of each other
@@ -64,45 +63,23 @@ export default function FullWidthImage(props) {
               display: "grid",
             }}
           >
-            {/* Any content here will be centered in the component */}
-            {title && (
-              <h1
-                className="typing-title has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-                style={{
-                  border: "4px solid #fff",
-                  // boxShadow:
-                  //   "rgb(132,205,238) 0.5rem 0px 0px, rgb(132,205,238) -0.5rem 0px 0px",
-                  backgroundColor: "#84cdee",
-                  color: "white",
-                  lineHeight: "1",
-                  padding: "0.25em",
-                }}
-              >
-                {title}
-              </h1>
-            )}
-            {subheading && (
-              <h3
-                className="subheading has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-                style={{
-                  border: "4px solid #fff",
-                  // boxShadow:
-                  //   "rgb(132,205,238) 0.5rem 0px 0px, rgb(132,205,238) -0.5rem 0px 0px",
-                  backgroundColor: "#84cdee",
-                  color: "white",
-                  lineHeight: "1",
-                  padding: "0.25rem",
-                  marginTop: "1.0rem",
-                }}
-              >
-                {subheading}
-              </h3>
-            )}
-            <Link style={{
+            {/* Any content here will be centered in the component
+            <h3
+              className="typing-title is-size-3"
+              style={{
+                color: "white",
+                lineHeight: "1",
+                padding: "1em",
+                textAlign: "center",
+              }}
+            >
+              {title}
+            </h3> */}
+            {/* <Link style={{
               marginTop: "1.0rem"
             }} className="btn" to="/contact">
               Contact Now
-            </Link>
+            </Link> */}
           </div>
         )}
       </div>
@@ -114,5 +91,4 @@ FullWidthImage.propTypes = {
   img: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   height: PropTypes.number,
-  subheading: PropTypes.string,
 };

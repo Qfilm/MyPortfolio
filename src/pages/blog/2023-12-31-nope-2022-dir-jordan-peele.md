@@ -5,7 +5,7 @@ date: 2023-12-31T17:56:45.964Z
 featuredpost: true
 featuredimage: https://m.media-amazon.com/images/M/MV5BMGIyNTI3NWItNTJkOS00MGYyLWE4NjgtZDhjMWQ4Y2JkZTU5XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_.jpg
 ---
-**An in-depth film analysis of Jordan Peele's (2022) - a social commentary on spectacle and Hollywood exploitation.**
+**An in-depth film analysis of Jordan Peele's (2022) - a social commentary on spectacle and Hollywood exploitation**
 
 
 

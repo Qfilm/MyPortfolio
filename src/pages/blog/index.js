@@ -15,11 +15,13 @@ export default class BlogIndexPage extends React.Component {
         }}
       >
         <h1
-        className="has-text-weight-bold is-size-1"
+        className="has-text-weight-bold is-size-1" id="blog-title"
             style={{
           border: "4px solid #fff",
           backgroundColor: "#84cdee",
-          padding: "1rem"
+          padding: "1rem",
+          color: "#fff",
+          
         }}
         >
         Film Analyses and Reviews

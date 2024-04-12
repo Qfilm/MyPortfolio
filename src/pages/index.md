@@ -1,8 +1,9 @@
 ---
 templateKey: index-page
-title: Quality On Screen
-image: /img/bg.jpeg
+title: Freelance film critic, photographer, and cinematographer—also
+  available for film tutoring
+image: /img/bg.webp
 heading: Quality On Screen
 subheading: Freelance film critic, photographer, and cinematographer—also
-  available for film tutoring.
+  available for film tutoring
 ---

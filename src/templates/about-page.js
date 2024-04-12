@@ -29,10 +29,12 @@ export const AboutPageTemplate = ({
           <div className="column is-8">
             <div className="sectionAbout">
               <h2
+                id="about"
                 className="title is-size-3 has-text-weight-bold is-bold-light"
                 style={{
                   border: "4px solid #fff",
                   backgroundColor: "#84cdee",
+                  color: "#fff",
                   padding: "1rem",
                   display: "inline-block",
                   width: "fit-content",

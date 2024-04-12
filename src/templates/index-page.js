@@ -29,6 +29,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading }) => {
                           style={{
                             border: "4px solid #fff",
                             backgroundColor: "#84cdee",
+                            color: "#fff",
                             padding: "1rem",
                             display: "inline-block",
                             width: "fit-content",

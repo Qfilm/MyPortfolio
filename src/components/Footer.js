@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "gatsby";
-import logo from "../img/logo.png";
+import logo from "../img/logo.svg";
 import letterboxd from "../img/social/letterboxd.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";

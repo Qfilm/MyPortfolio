@@ -5,7 +5,7 @@ date: 2024-03-08T23:00:34.606Z
 featuredpost: true
 featuredimage: https://a.ltrbxd.com/resized/film-poster/5/1/3/8/3/51383-goodfellas-0-460-0-690-crop.jpg?v=c6c265f228
 ---
-**An in-depth personalised analysis of Martin Scorsese's *GoodFellas* (1990): Exploring a classic tale of gangsters, greed, and morality.**
+**An in-depth personalised analysis of Martin Scorsese's *GoodFellas* (1990): Exploring a classic tale of gangsters, greed, and morality**
 
 ![](https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UY2972_.jpg)
 
