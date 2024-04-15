@@ -5,7 +5,6 @@ photos:
   - image: /img/img_20230507_021131.jpg
   - image: /img/img_20230325_111454.jpg
   - image: /img/img_20230607_110320.jpg
-  - image: /img/img_20230325_162051.jpg
   - image: /img/img_20230326_142728_971.jpg
   - image: /img/img_20230624_232429.jpg
   - image: /img/img_20230326_160439.jpg
