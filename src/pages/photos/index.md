@@ -17,7 +17,6 @@ photos:
   - image: /img/img_20230326_160439.jpg
   - image: /img/img_20230324_200503.jpg
   - image: /img/img_20230722_221758.jpg
-  - image: /img/img_20220808_160550.jpg
   - image: /img/img_20220622_175224.jpg
   - image: /img/img_20220808_212156.jpg
   - image: /img/img_20230325_111734.jpg
