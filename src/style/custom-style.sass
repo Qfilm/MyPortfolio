@@ -4,9 +4,16 @@
 .custom-Navbar
  background-color:$bg-color !important
 
+.w-100
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+
+.container-fluid
+  display: flex
+  justify-content: space-evenly!important
 
 .navbar-title 
-  padding: none !important
   font-size: 3rem
   font-weight: bold
   font-family:'Bebas Neue', sans-serif
@@ -20,24 +27,71 @@
   background-color: $bg-color 
 .navbar-toggler-icon 
  font-size:0.8em
- 
+.navbar-toggler 
+ &:active, &:focus 
+    box-shadow: none
+
 .hamburger
  background-color: $bg-color 
+ 
+
 .custom-nav-link 
   font-size: 1.5rem
   color:#000
-  
-
   &:hover
    color:#fff
    background-color:#84cdee
    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.3)
 
-.dropdown-menu 
-  border: none
-  background-color: transparent  
-  font-size: 1rem
-  color:#000
+.dropdown-menu   
+ border: 0
+ background-color: $bg-color
+
+.dropdown-item
+  font-size:1.2rem
+  font-weight: bold
+  color: #414a4c
+  &:hover
+   color:#fff
+   background-color:#84cdee
+   box-shadow: 0 0 10px  rgba(0, 0, 0, 0.3)
+
+
+@media (max-width: 576px) 
+  .custom-offcanvas 
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: rgba(185, 226, 245, 0.5)
+    display: flex
+    align-items: center
+    justify-content: center
+  .offcanvas.show
+   border: 0
+   width: auto
+
+  .offcanvas-body 
+    text-align: center 
+    background-color: transparent
+  .hamburger
+    background-color: transparent
+  .custom-nav-link 
+    &:hover 
+      background-color: transparent 
+      color: #fff  // Change this to your preferred color
+      //box-shadow: none
+    color: #fff    
+
+  .dropdown-menu
+   background-color: transparent
+   border: none    
+  .dropdown-item
+    color: #fff
+      
+    
+  
 
 .content .taglist
   list-style: none

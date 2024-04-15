@@ -14,7 +14,7 @@ function Header() {
     <Navbar expand={expand} className="custom-navbar">
       <Container fluid>
         <Row className="w-100">
-          <Col xs={5} md={2}>
+          <Col xs={4} md={2}>
             <Navbar.Brand href="/"><img
               src="/img/logo.svg"
               width="130"
@@ -23,14 +23,15 @@ function Header() {
               alt="React Bootstrap logo"
             /></Navbar.Brand>
           </Col>
-          <Col xs={4} md={8} className="text-center">
+          <Col xs={5} md={8} className="text-center">
             <a href='/'><h1 className="navbar-title">Quality On Screen</h1></a>
           </Col>
-          <Col xs={5} md={2} className="text-end">
+          <Col xs={2} md={2} className="text-end">
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
           </Col>
         </Row>
         <Navbar.Offcanvas
+          className="custom-offcanvas"
           id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           placement="end"
@@ -40,21 +41,24 @@ function Header() {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav  className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link className="custom-nav-link" href="/">Home</Nav.Link>
-              <Nav.Link className="custom-nav-link" href="/about">About</Nav.Link>
+              <Nav.Link className="custom-nav-link" href="/"> Home</Nav.Link>
+              <Nav.Link className="custom-nav-link" href="/about"> About</Nav.Link>
               <NavDropdown className="custom-nav-link"
                 title="Critical Writing"
                 id={`offcanvasNavbarDropdown-expand-${expand}`}
               >
-                <NavDropdown.Item className="dropdown-items" href="#action3">Close-textual Analyses</NavDropdown.Item>
-                <NavDropdown.Item className="dropdown-items" href="/blog">
+                <NavDropdown.Item  href="#action3">Close-textual Analyses</NavDropdown.Item>
+                <NavDropdown.Item  href="/blog">
                   Personalized Analyses
                 </NavDropdown.Item>
-                <NavDropdown.Item className="dropdown-items" href="#action5">
+                <NavDropdown.Item  href="#action5">
                   Essay-Styled Analyses
                 </NavDropdown.Item>
-                <NavDropdown.Item className="dropdown-items" href="#action6">
+                <NavDropdown.Item  href="#action6">
                   Article-Styled Analyses
+                </NavDropdown.Item>
+                <NavDropdown.Item  href="#action6">
+                  Cinema History Analyses
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link className="custom-nav-link" href="/photos">Photography</Nav.Link>
