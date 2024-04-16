@@ -7,10 +7,6 @@ featuredimage: https://m.media-amazon.com/images/M/MV5BMGIyNTI3NWItNTJkOS00MGYyL
 ---
 **An in-depth film analysis of Jordan Peele's (2022) - a social commentary on spectacle and Hollywood exploitation**
 
-
-
-![](https://m.media-amazon.com/images/M/MV5BMGIyNTI3NWItNTJkOS00MGYyLWE4NjgtZDhjMWQ4Y2JkZTU5XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_.jpg "         ")
-
 Jordan Peele's storytelling and filmmaking style, as well as his personal vision, consist of not only bending traditional and established genres but also reinventing them. From reinventing the social thriller to using horror as a sub-genre, and most recently, taking on science fiction head-first, it is with these means that Peele's work should not be taken at face value. In fact, the way in which his films can and should be understood is through the use of genre subversion, symbolism, foreshadowing, layered dialogue, themes, allegory, cinematography, mise en scène, and acting methods, which ultimately relate to a social, political, economic, or industrial commentary.
 
 Peele's third collaboration with Universal Pictures, *Nope* (2022), was not completely successful in landing its social, industrial, and economic commentary. The science fiction thriller is not everyone's cup of tea. Many fans of the filmmaker as well as casual moviegoers were disappointed by the picture due to their own expectations of what they thought they were going to be witnessing on screen. Maybe the disappointment materialised because the story and themes did not "live up to" Peele's directorial debut film, *Get Out* (2017). Maybe the pace of the narrative did not appeal to the masses of audiences anticipating surface-level spectacle for 130 minutes, or it could be that audiences found the marketing to be deceiving. Nevertheless, it is prominently because Peele set out to subvert the expectations of everyone lining up to see what is behind the curtain of his latest trick.
