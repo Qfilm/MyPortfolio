@@ -27,9 +27,9 @@ export const BlogPostTemplate = ({
             </h1>
             <p>{description}</p>
             <img
+              className="blog-image"
               src={featuredimage}
               alt="featuredimage"
-              style={{ maxWidth: "100%", height: "auto" }}
             />
             <PostContent content={content} />
           </div>
