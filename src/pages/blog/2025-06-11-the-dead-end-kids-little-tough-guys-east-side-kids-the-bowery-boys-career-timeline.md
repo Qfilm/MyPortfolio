@@ -4,7 +4,7 @@ title: The Dead End Kids - Little Tough Guys - East Side Kids - The Bowery Boys
   Career Timeline
 date: 2025-06-11T15:50:06.999Z
 featuredpost: true
-featuredimage: /img/image-w856.webp
+featuredimage: https://images.mubicdn.net/images/cast_member/91414/cache-536321-1587521736/image-w856.jpg
 ---
 <!--StartFragment-->
 
